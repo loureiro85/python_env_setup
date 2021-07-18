@@ -12,7 +12,7 @@ Instructions [ref](https://pre-commit.com/)
 
 - Freeze requirements: `pip freeze > requirements.txt`
 
-- Set up custom git log format:
+- Set up custom git log format[ref](# ref: https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298):
   Add to .gitconfig
 ```
 [alias]
@@ -25,5 +25,5 @@ Instructions [ref](https://pre-commit.com/)
 	lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
 	lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
 
-	# ref: https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298
+	
 ```
