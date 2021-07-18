@@ -12,7 +12,7 @@ Instructions [ref](https://pre-commit.com/)
 
 - Freeze requirements: `pip freeze > requirements.txt`
 
-- Set up custom git log format[ref](https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298):
+- Set up custom git log format: [[ref]](https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298)
   Add to .gitconfig
 ```
 [alias]
