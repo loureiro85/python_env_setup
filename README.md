@@ -12,17 +12,18 @@ Instructions [ref](https://pre-commit.com/)
 
 - Freeze requirements: `pip freeze > requirements.txt`
 
-## Recommended repos by Andre
-- repo: https://github.com/pre-commit/mirrors-mypy
-  rev: v0.782
-  hooks:
-  -   id: mypy
-      args: [--ignore-missing-imports, --no-warn-no-return]
-- repo: https://github.com/ambv/black
-  rev: stable
-  hooks:
-  -   id: black
-- repo: https://github.com/pycqa/flake8
-  rev: 3.7.9
-  hooks:
-      -   id: flake8
+- Set up custom git log format:
+  Add to .gitconfig
+```
+[alias]
+	lg = lg1
+	lg1 = lg1-specific --all
+	lg2 = lg2-specific --all
+	lg3 = lg3-specific --all
+
+	lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+	lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+	lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
+
+	# ref: https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298
+```
