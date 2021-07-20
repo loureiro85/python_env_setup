@@ -13,14 +13,48 @@
 #     hooks:
 #       - id: flake8
 
+# repos:
+#   - repo: https://github.com/pre-commit/pre-commit-hooks
+#     rev: v2.3.0
+#     hooks:
+#       - id: check-yaml
+#       - id: end-of-file-fixer
+#       - id: trailing-whitespace
+#   - repo: https://github.com/psf/black
+#     rev: 19.3b0
+#     hooks:
+#       - id: black
+
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
+    rev: v4.0.1
     hooks:
-      - id: check-yaml
-      - id: end-of-file-fixer
-      - id: trailing-whitespace
-  - repo: https://github.com/psf/black
-    rev: 19.3b0
+        - id: trailing-whitespace
+        - id: end-of-file-fixer
+        - id: double-quote-string-fixer
+  - repo: local
     hooks:
-      - id: black
+        - id: black
+          name: Black Code Formating
+          entry: black
+          language: python
+          types: [python]
+        - id: pylint
+          name: Pylint
+          entry: pylint
+          language: python
+          types: [python]
+          files: \.py$
+        - id: test-staged
+          name: Pytest Staged (via Docker)
+          stages: [commit]
+          entry: bash ./bin/test.sh --staged
+          language: system
+          types: [python]
+        - id: test-ci
+          name: Pytest CI (via Docker)
+          stages: [push]
+          entry: bash ./bin/test.sh --ci
+          language: system
+          types: [python]

@@ -25,3 +25,16 @@ Instructions [ref](https://pre-commit.com/)
 			lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
 			lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
 		```
+
+
+# Tips from Andre
+pytest-testmon
+pytest-cov
+black
+
+[pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks)
+
+
+python conventional commits
+python semantic versioning
+changelog.md

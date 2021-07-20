@@ -10,3 +10,11 @@ PyYAML==5.4.1
 six==1.16.0
 toml==0.10.2
 virtualenv==20.6.0
+
+# -r requirements.txt
+# black==21.7b0
+# pre-commit==2.13.0
+# pytest==6.2.3
+# pytest-cov==2.12.1
+# pytest-aiohttp==0.3.0
+# pytest-testmon==1.1.1
