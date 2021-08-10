@@ -42,3 +42,5 @@ changelog.md
 
 # Design Patterns - References
 - [Design Patterns](https://sourcemaking.com/design_patterns)
+- [python-patterns](https://github.com/faif/python-patterns)
+- [Python 3 Patterns, Recipes and Idioms](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/)
