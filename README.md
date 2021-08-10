@@ -38,3 +38,7 @@ black
 python conventional commits
 python semantic versioning
 changelog.md
+
+
+# Design Patterns - References
+- [Design Patterns](https://sourcemaking.com/design_patterns)
