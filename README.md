@@ -44,3 +44,4 @@ changelog.md
 - [Design Patterns](https://sourcemaking.com/design_patterns)
 - [python-patterns GitHub](https://github.com/faif/python-patterns)
 - [Python 3 Patterns, Recipes and Idioms](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/)
+- [O Catálogo dos Padrões de Projeto](https://refactoring.guru/pt-br/design-patterns/catalog)
